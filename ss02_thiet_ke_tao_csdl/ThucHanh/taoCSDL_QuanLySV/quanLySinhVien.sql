@@ -30,8 +30,8 @@ create table `Subject`(
 
 CREATE TABLE Mark (
     markID INT NOT NULL AUTO_INCREMENT,
-    subID INT NOT NULL UNIQUE,
-    studentID INT NOT NULL UNIQUE,
+    subID INT NOT NULL,
+    studentID INT NOT NULL,
     mark FLOAT DEFAULT 0,
     CHECK (mark BETWEEN 0 AND 100),
     examTimes TINYINT DEFAULT 1,

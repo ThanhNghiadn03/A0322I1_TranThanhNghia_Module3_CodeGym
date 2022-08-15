@@ -1,20 +1,20 @@
 create database quanLyBanHang;
 use quanLyBanHang;
-create table customer(
-	customerID int not null auto_increment,
-    customerName varchar(50) not null,
-    customerAge int ,
-    check (customerAge >=18),
-    primary key(customerID)
+CREATE TABLE customer (
+    customerID INT NOT NULL AUTO_INCREMENT,
+    customerName VARCHAR(50) NOT NULL,
+    customerAge INT,
+    PRIMARY KEY (customerID)
 );
 
-create table `Order`(
-	orderID int not null auto_increment,
-    customerID int not null,
-    oderDate datetime,
-    orderTotalPrice int default 0,
-    primary key(orderID),
-    foreign key(customerID) references customer(customerID)
+CREATE TABLE `Order` (
+    orderID INT NOT NULL AUTO_INCREMENT,
+    customerID INT NOT NULL,
+    oderDate DATETIME,
+    orderTotalPrice INT,
+    PRIMARY KEY (orderID),
+    FOREIGN KEY (customerID)
+	REFERENCES customer (customerID)
 ); 
 
 create table `Product`(
@@ -24,11 +24,13 @@ create table `Product`(
     primary key(productID)
 );
 
-create table `OrderDetail`(
-	orderID int not null,
-    productID int not null,
-    odQTY int default 0,
-    primary key(orderID,productID),
-    foreign key(orderID) references `Order`(orderID),
-    foreign key(productID) references `Product`(productID)
+CREATE TABLE `OrderDetail` (
+    orderID INT NOT NULL,
+    productID INT NOT NULL,
+    odQTY INT DEFAULT 0,
+    PRIMARY KEY (orderID , productID),
+    FOREIGN KEY (orderID)
+        REFERENCES `Order` (orderID),
+    FOREIGN KEY (productID)
+        REFERENCES `Product` (productID)
 );
