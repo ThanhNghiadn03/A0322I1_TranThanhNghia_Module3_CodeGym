@@ -39,3 +39,7 @@ img {
 .muc_luc li:hover {
     background-color: cadetblue;
 }
+h5 {
+    margin: 0;
+    padding: 0;
+}
