@@ -1,0 +1,41 @@
+#content {
+    width: 960px;
+    margin: 0px auto;
+}
+.text-content {
+    text-align: center;
+}
+img {
+    width: 80%;
+}
+
+.muc_luc,.muc_luc ol , .muc_luc li {
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 50px;
+    background-color: lightgrey;
+
+}
+#ten_muc_luc {
+    text-align: center;
+}
+
+.chap1 , .chap2 , .chap3{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 70px;
+    text-align: center;
+}
+.chap1 h2 , .chap2 h2 , .chap3 h2 {
+    position: relative;
+    margin: 100px 10px 100px 10px;
+}
+
+.muc_luc li a {
+    text-decoration: none;
+    color: black;
+}
+
+.muc_luc li:hover {
+    background-color: cadetblue;
+}

@@ -74,3 +74,6 @@ begin
     where id = id_need_update;
 end //
 delimiter ;
+
+call update_amount_product_byID(7,4);
+call delete_product_byID(7);

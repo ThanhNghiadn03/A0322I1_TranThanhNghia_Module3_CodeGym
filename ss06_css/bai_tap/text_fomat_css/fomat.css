@@ -1,0 +1,19 @@
+h1 {
+    font-size: 30px;
+    margin-bottom: 2px;
+}
+div {
+    font-family: "Times New Roman";
+    text-indent: 50px;
+    text-align: justify;
+    padding: 8px;
+    font-style: inherit;
+    width: 700px;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+
