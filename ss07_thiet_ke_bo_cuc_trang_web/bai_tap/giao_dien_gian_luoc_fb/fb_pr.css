@@ -14,31 +14,186 @@ body {
     margin: 0;
 }
 .header {
-    background-color: bisque;
-    width: 100%;
-    height: 100px;
+    border: 1px solid black;
+    position: relative;
+    background-color: white;
+    width: 99.87%;
+    height: 70px;
 }
 .main {
-    background-color: lightgrey;
+    background-color: #ecf0f1;
+    border: 1px solid black;
     width: 60%;
-    height: 500px;
+    height: 558px;
     float: left;
+
 }
 .leftBar {
-    background-color: brown;
-    width: 15%;
-    height: 500px;
+    background-color: #ecf0f1;
+    border: 1px solid black;
+    width: 20%;
+    height: 558px;
     float: left;
 }
 .rightBar {
-    background-color: aqua;
-    width: 25%;
-    height: 500px;
+    background-color: #ecf0f1;
+    border: 1px solid black;
+    width: 19.5%;
+    height: 558px;
     float: left;
 }
-.footer {
-    background-color: cadetblue;
-    width: 100%;
-    height: 100px;
-    clear: both;
+/*.footer {*/
+/*    !*background-color: cadetblue;*!*/
+/*    width: 100%;*/
+/*    height: 100px;*/
+/*    clear: both;*/
+/*}*/
+
+.img_use {
+    width: 38px;
+    height: 36px;
+    border-radius: 50%;
 }
+#hinh_nen_fb {
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 5px;
+    float: left;
+}
+
+#searchBox {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 50px;
+    float: left;
+    background-color: #dfe4ea;
+    border-radius: 30px;
+    height: 40px;
+}
+
+#searchBox_text {
+    border: none;
+    outline: none;
+    width: 224px;
+    height: 30px;
+    font-size: 15px;
+    background-color: #dfe4ea;
+    font-family: inherit;
+}
+
+#search-btn {
+    border: none;
+    background-color: #dfe4ea;
+    width: 47px;
+    height: 33px;
+    border-radius: 50%;
+}
+
+#searchBox_text {
+    border-radius: 30px;
+    padding: 4px;
+    /*font-family: inherit;*/
+}
+
+#avartar {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 1308px;
+}
+
+#avatar_fb {
+    /*border-color: #4b7bec;*/
+}
+
+#button_fb {
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 1181px;
+    margin-top: 14px;
+}
+
+#mess_button , #menu_button , #noti_button {
+    width: 38px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+#post {
+    position: relative;
+    border: 1px solid white;
+    width: 401px;
+    height: 556px;
+    margin-left: 180px;
+    margin-top: 0px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#avartar_main {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+}
+#name {
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 63px;
+    float: left;
+}
+
+#name_ttn {
+    font-family: inherit;
+    font-weight: 600;
+}
+#status {
+    font-family: inherit;
+    font-size: 15px;
+    line-height: inherit;
+    color: #636e72;
+}
+
+#global {
+    font-size: 12px;
+    color: #636e72;
+}
+
+#caption {
+    position: absolute;
+    margin-top: 52px;
+    margin-left: 16px;
+}
+
+#heart {
+    color: #d63031;
+}
+
+#photo_hpat {
+    position: absolute;
+    width: 401px;
+    height: 401px;
+    margin-top: 101px;
+    margin-left: 0px;
+}
+
+#emotion {
+    position: absolute;
+    margin-top: 516px;
+    margin-left: 11px;
+}
+
+#heart_emotion {
+    width: 19px;
+    height: 19px;
+}
+
+#quantity {
+    font-family: inherit;
+    font-size: 15px;
+    line-height: inherit;
+    color: #636e72;
+    position: absolute;
+    margin-top: -21px;
+    margin-left: 26px;
+}
+
