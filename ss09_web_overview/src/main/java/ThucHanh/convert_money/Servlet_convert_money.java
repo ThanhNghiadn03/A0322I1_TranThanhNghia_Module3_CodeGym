@@ -1,4 +1,4 @@
-package servlet;
+package ThucHanh.convert_money;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
