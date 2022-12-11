@@ -27,7 +27,7 @@ public class ServiceOfServiceImpl implements ServiceOfService {
 
     @Override
     public void deleteById(int id) {
-
+        serviceRepository.deleteById(id);
     }
 
     @Override

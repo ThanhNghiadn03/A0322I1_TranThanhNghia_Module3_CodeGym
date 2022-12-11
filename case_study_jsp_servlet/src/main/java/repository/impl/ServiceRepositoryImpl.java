@@ -128,6 +128,8 @@ public class ServiceRepositoryImpl implements ServiceRepository {
         try {
             Connection connection = ConnectionUtils.getConnection();
             PreparedStatement statement = connection.prepareStatement(ConstantService.DELETE_SERVICE);
+            statement.setInt(1,id);
+            statement.executeUpdate();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException throwables) {

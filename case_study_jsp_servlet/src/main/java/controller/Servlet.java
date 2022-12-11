@@ -69,6 +69,9 @@ public class Servlet extends HttpServlet {
             case "deleteEmployee" :
                 deleteEmployee(request,response);
                 break;
+            case "deleteService" :
+                deleteService(request,response);
+                break;
             case "editEmployee" :
                 editEmployee(request,response);
                 break;
@@ -112,6 +115,9 @@ public class Servlet extends HttpServlet {
                 break;
             case "deleteEmployee" :
                 deleteEmployee(request,response);
+                break;
+            case "deleteService" :
+                deleteService(request,response);
                 break;
             case "editEmployee" :
                 showFormUpdateEmployee(request,response);
@@ -412,6 +418,11 @@ public class Servlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("idEmployee"));
         employeeService.deleteById(id);
         showListEmployee(request,response);
+    }
+    private void deleteService(HttpServletRequest request, HttpServletResponse response) {
+        int id = Integer.parseInt(request.getParameter("idService"));
+        serviceOfService.deleteById(id);
+        showListService(request,response);
     }
     private void showHome(HttpServletRequest request, HttpServletResponse response) {
         try {
